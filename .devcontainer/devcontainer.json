@@ -1,9 +1,0 @@
-{
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "runArgs": ["--device=/dev/net/tun"],
-  "features": {
-    // ...
-    "ghcr.io/tailscale/codespace/tailscale": {}
-    // ...
-  }
-}
