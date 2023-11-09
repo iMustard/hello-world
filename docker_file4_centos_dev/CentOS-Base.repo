@@ -1,0 +1,46 @@
+# CentOS-Base.repo
+#
+# The mirror system uses the connecting IP address of the client and the
+# update status of each mirror to pick mirrors that are updated to and
+# geographically close to the client.  You should use this for CentOS updates
+# unless you are manually picking other mirrors.
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the 
+# remarked out baseurl= line instead.
+#
+#
+
+[base]
+name=Base
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.7/os/$basearch/
+gpgcheck=0
+enabled=1
+
+#released updates 
+[updates]
+name=CentOS-Updates
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.7/updates/$basearch/
+gpgcheck=0
+enabled=1
+
+#additional packages that may be useful
+[extras]
+name=CentOS-Extras
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.7/extras/$basearch/
+gpgcheck=0
+enabled=1
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-Plus
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.7/centosplus/$basearch/
+gpgcheck=0
+enabled=1
+
+#contrib - packages by Centos Users
+[contrib]
+name=Contrib
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/centos-vault/6.7/contrib/$basearch/
+gpgcheck=0
+enabled=1
+
